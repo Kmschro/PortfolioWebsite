@@ -1,40 +1,143 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Personal Portfolio</title>
-    <link rel="stylesheet" href="styles.css">
+<title>Home - Klaus Schroeder's Personal Website</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">   
+<link rel="stylesheet" href="styles.css">
+<link rel="icon" href="./favicon.ico" type="image/x-icon">
+<link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <title>Klaus Schroeder | Web Developer</title>
 </head>
-<body>
-    <nav id="navbar">
-        <ul>
-            <li><a href="#welcome-section">Welcome</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#contact">Contact</a></li>
-        </ul>
+    
+ 
+  <body>
+    <!-- Navbar -->
+    <nav>
+        <div class="navbar">
+          <h1 >Klaus Schroeder</h1>
+          <a href="#hero">Home</a>
+          <a href="#about">About</a>
+          <a href="#skills">Skills</a>
+          <a href="#projects">Projects</a>
+          <a href="#contact">Contact</a>
+        </div>
     </nav>
-    
-    <section id="welcome-section">
-        <h1>Welcome to My Portfolio</h1>
-        <p>Hi, I'm Klaus. A passionate developer.</p>
+
+    <!-- Hero Section -->
+    <section id="hero" class="hero hidden">
+      <div class="container">
+        <h1>Hi, I'm Klaus Schroeder</h1>
+        <p>A passionate Web Developer</p>
+        <a href="#about" class="btn">Learn More</a>
+       
+        
+      </div>
     </section>
-    
-    <section id="projects">
+
+    <!-- More about -->
+    <section id="about" class="about hidden">
+      <div class="container">
+        <h2>About Me</h2>
+        <img src="images/profile-pic.jpg" ALIGN=”right” alt="profile-pic" class="profile-pic">
+        <p class="p-profile-pic">My name is Klaus Schroeder and I am a driven individual currently pursuing a Bachelor of Science Degree in Computer Science at Quinnipiac University, Hamden, Connecticut, with an expected graduation in May 2025. I hold an Associate degree in web development from Norwalk Community College, where I graduated Cum Laude in 2022. Prior to that, I completed my High School Diploma at P-TECH High School, Norwalk, Connecticut, graduating with a 4.1 GPA and membership in the National Honor Society. </p>
+        <p class="p-profile-pic">My professional journey includes valuable experiences such as my role as a Retail/Pharmacy Associate at CVS from June 2023 to August 2023. During this time, I prioritized positive customer experiences through attentive service, maintained accurate cash transactions, and ensured a well-organized and visually appealing store environment.</p>
+        <p class="p-profile-pic"> I also had the opportunity to intern at IBM, where I worked in the Energy Resources Division in the summer of 2022. My responsibilities included conducting interviews with renewable energy stakeholders, contributing to the design of a user interface for energy monitoring, and delivering a final presentation outlining our project objectives and solutions. Additionally, I contributed significantly to the IBM Cloud and Cognitive Division in the summer of 2021, where my team's innovative use of chatbots earned us 1st place in the IBM Internship Expo.</p>
+        <p class="p-profile-pic">My skill set includes proficiency in HTML, CSS, Java, JavaScript, Git, GitHub, and PHP, alongside strong familiarity with Microsoft Office and Google Suite. I possess excellent communication skills, both written and verbal, and thrive in collaborative, goal-oriented environments. Additionally, my ability to remain composed under pressure enables me to effectively navigate challenging situations.</p>
+        <p class="p-profile-pic">I am eager to leverage my skills and experiences to contribute meaningfully to dynamic and innovative teams, and I am excited to explore new opportunities in the field of computer science and web development.</p>
+      </div>
+    </section>
+
+    <!-- Skills section -->
+    <section id="skills" class="skills hidden">
+      <div class="container">
+        <h2>Skills</h2>
+        <div class="skills-list">
+          <div class="skill">HTML</div>
+          <div class="skill">CSS</div>
+          <div class="skill">JavaScript</div>
+          <div class="skill">React</div>
+          <div class="skill">PHP</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects section -->
+    <section id="projects" class="projects hidden">
+      <div class="container">
         <h2>Projects</h2>
-        <div class="project-tile">
-            <a href="https://github.com/yourusername/project1" target="_blank">Project 1</a>
-            <p>Description of project 1.</p>
+        <div class="project">
+          <h3><a href="https://github.com/Kmschro/DreamTeam2" class="link-color">Java Based Platformer Game</a></h3>
+          <p>Description of project 2.</p>
         </div>
-        <div class="project-tile">
-            <a href="https://github.com/yourusername/project2" target="_blank">Project 2</a>
-            <p>Description of project 2.</p>
+      
+        <div class="project">
+          <h3 ><a href="https://github.com/Kmschro/JavaScript-Roleplaying-Game" class="link-color">JavaScript Roleplaying Game</a></h3>
+          <p>Description of project 1.</p>
         </div>
+        <div class="project">
+          <h3><a href="https://github.com/Kmschro/Multi-player-Trivia-Game" class="link-color">Multi Player Trivia Game</a></h3>
+          <p>Description of project 2.</p>
+        </div>
+      </div>
     </section>
-    
-    <section id="contact">
+
+    <!-- Contact section -->
+    <section id="contact" class="contact hidden">
+      <div class="container">
         <h2>Contact</h2>
-        <p>Feel free to reach out through my <a id="profile-link" href="https://github.com/yourusername" target="_blank">GitHub</a> profile.</p>
+        <form>
+          <div class="form-group">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required />
+          </div>
+          <div class="form-group">
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required />
+          </div>
+          <div class="form-group">
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" required></textarea>
+          </div>
+          <button type="submit" class="btn">Send</button>
+        </form>
+      </div>
     </section>
-</body>
+
+    <!-- Social accounts - Fixed to the right -->
+    <div class="social-icons">
+      <a href="https://github.com/Kmschro" target="_blank">
+        <ion-icon name="logo-github"></ion-icon>
+      </a>
+      <a href="https://www.linkedin.com/in/klaus-schroeder/" target="_blank">
+        <ion-icon name="logo-linkedin"></ion-icon>
+      </a>
+    </div>
+
+    <!-- Scroll to top -->
+    <button id="scrollTopBtn" class="scrollTopBtn">Top</button>
+
+    <!-- Footer section -->
+    <footer>
+      <div class="container">
+        <p>&copy; 2024 Klaus Schroeder. All rights reserved.</p>
+      </div>
+    </footer>
+
+    <!-- Website scripts -->
+    <script src="script.js"></script>
+
+    <!-- Ion icons scripts -->
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+  </body>
 </html>
