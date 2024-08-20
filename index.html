@@ -56,14 +56,28 @@
       <div class="container">
         <h2>Skills</h2>
         <div class="skills-list">
-          <div class="skill">HTML</div>
-          <div class="skill">CSS</div>
-          <div class="skill">JavaScript</div>
-          <div class="skill">React</div>
-          <div class="skill">PHP</div>
+          <div class="skill">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/java/java-original-wordmark.svg" alt="Java"/>
+          </div>
+          <div class="skill">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-original-wordmark.svg" alt="HTML" />
+          </div>
+          <div class="skill">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/css3/css3-original-wordmark.svg" alt="CSS" />
+          </div>
+          <div class="skill">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg" alt="JavaScript"/>
+          </div>
+          <div class="skill"> 
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original-wordmark.svg" alt="React" />
+          </div>
+          <div class="skill">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/python/python-original-wordmark.svg" alt="Python"/>
+          </div>
         </div>
       </div>
     </section>
+    
 
     <!-- Projects section -->
     <section id="projects" class="projects hidden">
@@ -71,40 +85,37 @@
         <h2>Projects</h2>
         <div class="project">
           <h3><a href="https://github.com/Kmschro/DreamTeam2" class="link-color">Java Based Platformer Game</a></h3>
-          <p>Description of project 2.</p>
+          <p>This is a platformer game with the goal of traversing through each platforming to finish the game. There are various kinds of enemies and obstacles that you will need to avoid. There are six levels that you need to complete to finish the game. There are also coins on each level for you to collect.</p>
         </div>
-      
         <div class="project">
           <h3 ><a href="https://github.com/Kmschro/JavaScript-Roleplaying-Game" class="link-color">JavaScript Roleplaying Game</a></h3>
-          <p>Description of project 1.</p>
+          <p>This project is a Role Playing Game (RPG) using JavaScript. You'll manage player stats like experience points, health, and gold while navigating through different locations, battling monsters, and upgrading weapons. The game will incorporate arrays, strings, objects, functions, loops, and conditional statements, providing a hands-on experience in developing an interactive web-based RPG.</p>
         </div>
         <div class="project">
           <h3><a href="https://github.com/Kmschro/Multi-player-Trivia-Game" class="link-color">Multi Player Trivia Game</a></h3>
-          <p>Description of project 2.</p>
+          <p>This project is a multi-player trivia game that can be played over a network, requiring knowledge in concurrency control, socket programming (both TCP and UDP), and GUI event handling. The game features client-server interactions where the server sends trivia questions, and clients respond by buzzing in, with the fastest response allowing the client to answer the question. The server manages multiple clients concurrently, ensuring synchronized communication and maintaining a score tally throughout the game.</p>
         </div>
       </div>
     </section>
 
     <!-- Contact section -->
     <section id="contact" class="contact hidden">
-      <div class="container">
-        <h2>Contact</h2>
-        <form>
-          <div class="form-group">
-            <label for="name">Name:</label>
-            <input type="text" id="name" name="name" required />
-          </div>
-          <div class="form-group">
-            <label for="email">Email:</label>
-            <input type="email" id="email" name="email" required />
-          </div>
-          <div class="form-group">
-            <label for="message">Message:</label>
-            <textarea id="message" name="message" required></textarea>
-          </div>
-          <button type="submit" class="btn">Send</button>
-        </form>
-      </div>
+      <h2>Contact</h2>
+      <form id="contactForm" action="https://script.google.com/macros/s/AKfycbzx8wWbyh849-OCrYBHhXhkH-8zeA5YxUFAie2MxyarmSbp2xXhqZ1aWxYZAVikAyYodg/exec" method="POST">
+        <div class="form-group">
+          <label for="name">Name:</label>
+          <input type="text" id="name" name="name" required />
+        </div>
+        <div class="form-group">
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" required />
+        </div>
+        <div class="form-group">
+          <label for="message">Message:</label>
+          <textarea id="message" name="message" required></textarea>
+        </div>
+        <button type="submit" class="btn">Send</button>
+      </form>
     </section>
 
     <!-- Social accounts - Fixed to the right -->

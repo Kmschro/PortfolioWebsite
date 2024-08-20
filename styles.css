@@ -2,8 +2,14 @@
 * {
   box-sizing: border-box;
   margin: 0;
-  padding: 0;
+
 }
+html,
+body {
+  height: 100%;
+  margin: 0;
+}
+
 .hidden {
   opacity: 0;
   transform: translateY(20px);
@@ -35,11 +41,12 @@ body {
   line-height: 1.6;
   color: #ffffff;
   background-color: #f4f4f4;
+  width: var(--page-width);
+  height: var(--page-height);
 }
 
 .container {
-  width: 80%;
-  max-width: 1200px;
+  width: 100%;
   margin: 0 auto;
   padding: 20px;
 }
@@ -55,7 +62,7 @@ nav {
 }
 .navbar a {
   overflow: hidden;
-  background-color: rgb(85, 7, 140);
+  background-color: rgb(85, 7, 140) ;
   display: flex;
   justify-content: flex-end;
   
@@ -121,17 +128,17 @@ nav ul li a:hover {
 }
 
 .hero {
-  background: linear-gradient(135deg, rgb(85, 7, 140), transparent), url("images/quCampus.jpg");
+  background-image: linear-gradient(135deg, rgb(85, 7, 140), transparent), url("images/quCampus.jpg");
   align-items: center;
   background-attachment: fixed;
   background-size: cover;
-  height: 100vh;
+  background-position: center;
   display: flex;
   justify-content: center;
-  align-items: center;
-  color: #fff;
+  min-height: 100vh;
   text-align: center;
   flex-direction: column;
+  
 }
 
 .hero h1 {
@@ -167,14 +174,13 @@ nav ul li a:hover {
   
 }
 .projects {
-  background-color: white;
+  background-color: #ffffffee;
   color: #333;
 }
 .contact {
   background: linear-gradient( rgba(61, 47, 124, 0.896),rgb(85, 7, 140));
 }
 .about, .skills, .projects, .contact {
-  
   padding: 60px 0;
   text-align: center;
   box-shadow: 3px 3px 3px #333;
@@ -193,13 +199,26 @@ nav ul li a:hover {
 }
 
 .skills .skill {
-  background-color: #333;
-  color: white;
-  padding: 10px 20px;
+  background-color: #ffffff;
+  padding: 1%;
   margin: 10px;
-  border-radius: 5px;
-  flex-basis: 30%;
+  border-radius: 20px;
+  flex-basis: 25%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
+
+.skills .skill img {
+  max-width: 100px; /* Adjust the width as needed */
+  height: auto; 
+  flex-basis: 25%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
 
 .project {
   background-color: #fff;
@@ -229,7 +248,7 @@ nav ul li a:hover {
 
 .contact .form-group input,
 .contact .form-group textarea {
-  width: 100%;
+  width: 85%;
   padding: 10px;
   border: 1px solid #ccc;
   border-radius: 5px;
@@ -238,6 +257,7 @@ nav ul li a:hover {
 .contact .form-group textarea {
   height: 100px;
   resize: none;
+  padding: 10px;
 }
 
 .contact .btn {
